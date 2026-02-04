@@ -10,7 +10,7 @@ window.addEventListener("mousemove", (e) => {
 });
 
 // Typewriter
-const roles = ["Photographer", "IoT Engineer", "Graphic Designer", "Editor"];
+const roles = ["Photographer", "Arduino Enthusiast", "Graphic Designer", "Editor"];
 let roleIdx = 0, charIdx = 0, isDeleting = false;
 function type() {
     const current = roles[roleIdx];
