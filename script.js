@@ -42,3 +42,16 @@ document.addEventListener("DOMContentLoaded", () => {
     updateAge("2009-07-09");
     document.querySelectorAll(".section").forEach(s => observer.observe(s));
 });
+/* ================= SCROLLBAR AUTO-HIDE ================= */
+
+let scrollTimeout;
+
+window.addEventListener("scroll", () => {
+  document.body.classList.add("scrolling");
+
+  clearTimeout(scrollTimeout);
+
+  scrollTimeout = setTimeout(() => {
+    document.body.classList.remove("scrolling");
+  }, 700); // hide after stop scrolling
+});
